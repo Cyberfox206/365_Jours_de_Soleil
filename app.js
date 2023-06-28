@@ -65,9 +65,25 @@ let set = {
             tmp_min: -3,
             special_classe: "",
         },
+        {
+            title_day: "mar",
+            title_dat: "28",
+            icon: "img/sleet.png",
+            tmp_max: 7,
+            tmp_min: 0,
+            special_classe: "spn",
+        },
+        {
+            title_day: "mer",
+            title_dat: "29",
+            icon: "img/hazy.png",
+            tmp_max: 4,
+            tmp_min: -2,
+            special_classe: "spn",
+        },
     ],
 }
-for (let i = 0; i !== 9; i++) {
+for (let i = 0; i !== 10; i++) {
     part.innerHTML += `
     <article class="add_card_by_js ${set.data[i].special_classe}">
         <h2>${set.data[i].title_day}</h2>

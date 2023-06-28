@@ -98,8 +98,26 @@ main {
   justify-content: space-between;
 }
 
+.paralax {
+  margin: 5vh 0 10vh 0;
+  display: none;
+  width: 100%;
+  min-height: 500px;
+  border: none;
+  background-image: url(img/beach-1852945_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (min-width:1200px) {
+  .paralax {
+    display: block;
+  }
+}
+
 main section {
-  margin: 1rem 0;
+  margin: 5vh 0 10vh 0;
   width: 68%;
   display: flex;
   flex-wrap: wrap;
@@ -127,15 +145,18 @@ main section h2 {
   box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
 }
 
+.spn {
+  display: none;
+}
 
 .add_card_by_js span {
   position: relative;
 }
 
 main nav {
+  margin: 5vh 0 10vh 0;
   border-radius: 20px;
   width: 30%;
-  margin: 1rem 0;
   padding: 0.5rem;
   background-color: white;
   box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
@@ -178,7 +199,7 @@ main nav ul li p {
 }
 
 div {
-  margin: 1rem 0;
+  margin: 0 0 5vh 0;
   width: 50%;
   display: flex;
   flex-wrap: wrap;
@@ -190,7 +211,7 @@ div img {
 }
 
 form {
-  margin: 1.5rem 0;
+  margin: 0 0 5vh 0;
   width: 50%;
   justify-content: center;
   background-color: white;
@@ -229,6 +250,50 @@ form button {
   border: none;
   color: white;
   text-transform: uppercase;
+}
+
+table {
+  display: none;
+  
+}
+
+@media (min-width:1200px) {
+  main section {
+    width: 70%;
+    margin: 0 0 10vh 0;
+  }
+
+  main nav {
+    width: 30%;
+    margin: 0 0 10vh 0;
+  }
+
+  .add_card_by_js {
+    width: 19%;
+  }
+
+  .add_card_by_js img {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .spn {
+    display: flex;
+  }
+
+  div {
+    width: 70%;
+    margin: 0 0 5vh 0;
+  }
+
+  div img {
+    width: 30%;
+  }
+
+  form {
+    width: 30%;
+    margin: 0 0 5vh 0;
+  }
 }
 
 /* ----------------------------------------------------- */
