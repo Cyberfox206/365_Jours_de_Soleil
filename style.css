@@ -110,12 +110,6 @@ main {
   background-attachment: fixed;
 }
 
-@media (min-width:1200px) {
-  .paralax {
-    display: block;
-  }
-}
-
 main section {
   margin: 5vh 0 10vh 0;
   width: 68%;
@@ -199,7 +193,7 @@ main nav ul li p {
 }
 
 div {
-  margin: 0 0 5vh 0;
+  margin-bottom: 5vh;
   width: 50%;
   display: flex;
   flex-wrap: wrap;
@@ -211,7 +205,7 @@ div img {
 }
 
 form {
-  margin: 0 0 5vh 0;
+  margin-bottom: 5vh;
   width: 50%;
   justify-content: center;
   background-color: white;
@@ -252,20 +246,22 @@ form button {
   text-transform: uppercase;
 }
 
-table {
+.ephemeride {
   display: none;
-  
+  width: 70%;
+  border-radius: 10px;
+  margin-bottom: 10vh;
 }
 
 @media (min-width:1200px) {
   main section {
     width: 70%;
-    margin: 0 0 10vh 0;
+    margin-bottom: 10vh;
   }
 
   main nav {
     width: 30%;
-    margin: 0 0 10vh 0;
+    margin-bottom: 10vh;
   }
 
   .add_card_by_js {
@@ -283,7 +279,7 @@ table {
 
   div {
     width: 70%;
-    margin: 0 0 5vh 0;
+    margin-bottom: 5vh;
   }
 
   div img {
@@ -292,7 +288,19 @@ table {
 
   form {
     width: 30%;
-    margin: 0 0 5vh 0;
+    margin-bottom: 5vh;
+  }
+
+  .ephemeride {
+    display: block;
+  }
+
+  .paralax {
+    display: block;
+  }
+
+  .spt {
+    display: block;
   }
 }
 
