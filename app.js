@@ -7,6 +7,7 @@ let set = {
             icon: "img/chance-storm.png",
             tmp_max: 14,
             tmp_min: 6,
+            special_classe: "",
         },
         {
             title_day: "mar",
@@ -14,77 +15,65 @@ let set = {
             icon: "img/smoke.png",
             tmp_max: 8,
             tmp_min: 1,
+            special_classe: "",
         },
         {
             title_day: "mer",
             title_dat: "22",
-            icon: "img/",
+            icon: "img/blizzard.png",
             tmp_max: 6,
             tmp_min: -6,
+            special_classe: "",
         },
         {
             title_day: "jeu",
             title_dat: "23",
-            icon: "img/",
+            icon: "img/snow.png",
             tmp_max: 4,
             tmp_min: -2,
+            special_classe: "",
         },
         {
             title_day: "ven",
             title_dat: "24",
-            icon: "img/",
+            icon: "img/sunny.png",
             tmp_max: 14,
             tmp_min: 10,
+            special_classe: "",
         },
         {
             title_day: "sam",
             title_dat: "25",
-            icon: "img/",
+            icon: "img/thunder-storm.png",
             tmp_max: 16,
             tmp_min: 12,
+            special_classe: "",
         },
         {
             title_day: "dim",
             title_dat: "26",
-            icon: "img/",
+            icon: "img/fog.png",
             tmp_max: 8,
             tmp_min: 5,
+            special_classe: "",
         },
         {
             title_day: "lun",
             title_dat: "27",
-            icon: "img/",
+            icon: "img/wind.png",
             tmp_max: 4,
             tmp_min: -3,
+            special_classe: "",
         },
-
-
-
-        // {
-        //     title_day: "",
-        //     title_dat: "",
-        //     icon: "img/",
-        //     tmp_max: 14,
-        //     tmp_min: 6,
-        // },
-        // {
-        //     title_day: "",
-        //     title_dat: "",
-        //     icon: "img/",
-        //     tmp_max: 14,
-        //     tmp_min: 6,
-        // },
-
-
     ],
 }
 for (let i = 0; i !== 9; i++) {
     part.innerHTML += `
-    <article class="add_card_by_js">
-        <h3>${set.data[i].title_day}</h3>
+    <article class="add_card_by_js ${set.data[i].special_classe}">
+        <h2>${set.data[i].title_day}</h2>
         <p>${set.data[i].title_dat}</p>
         <img src="${set.data[i].icon}" alt="image représentent le temp">
-        <p><span>${set.data[i].tmp_max}</span> | <span>${set.data[i].tmp_min}</span></p>
+        <p><span class="deger_psedo_element">${set.data[i].tmp_max}</span> | <span class="deger_psedo_element">${set.data[i].tmp_min}</span></p>
     </article>
 `
 }

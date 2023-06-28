@@ -94,44 +94,140 @@ header nav ul li i {
 main {
   width: 85%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 main section {
-  margin: 1rem;
-  width: 70%;
+  margin: 1rem 0;
+  width: 68%;
   display: flex;
   flex-wrap: wrap;
 }
 
 main section h2 {
+  margin: 1rem 0;
   width: 100%;
-  font-family: var(--font-text);
   text-transform: uppercase;
-  font-size: 120%;
+  font-family: var(--font-text);
 }
 
 .add_card_by_js {
-  border-radius: 5%;
-  background-color: white;
-  margin: 0.3rem;
-  text-transform: uppercase;
-  width: 45%;
+  width: 48%;
   display: flex;
+  border-radius: 5%;
+  margin: 0.2rem;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  text-transform: uppercase;
   font-family: var(--font-text);
+  box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
 }
 
-.add_card_by_js img {
-  height: 40%;
-}
 
-.add_sp_card_js_not_visibel {
-  display: none;
+.add_card_by_js span {
+  position: relative;
 }
 
 main nav {
-  width: 20%;
-  border: 1px black solid;
+  border-radius: 20px;
+  width: 30%;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: white;
+  box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
 }
+
+main nav ul {
+  margin: 0.2rem;
+  list-style: none;
+}
+
+main nav ul li {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  padding: 0.5rem;
+}
+
+main nav ul li:hover {
+  background-color: rgba(79, 163, 182, 0.5);
+  transition: 1s;
+  border-radius: 8px;
+}
+
+main nav ul li i {
+  color: #4fa3b6;
+}
+
+main nav ul li p {
+  margin-left: 0.5rem;
+  font-family: var(--font-text);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.deger_psedo_element::after {
+  content: "°";
+  position: absolute;
+  right: -2px;
+  top: 2px;
+}
+
+div {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div img {
+  width: 45%;
+  margin: 0.2rem;
+}
+
+.section_email {
+  width: 50%;
+  background-color: white;
+  border-radius: 5%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: var(--font-text);
+  color: #4fa3b6;
+}
+
+.section_email h2 {
+  text-transform: capitalize;
+}
+
+.section_email p {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.section_email input {
+  width: 90%;
+  height: 12%;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+}
+
+.section_email button {
+  width: 90%;
+  height: 12%;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  background-color: #4fa3b6;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* ----------------------------------------------------- */
